@@ -16,6 +16,10 @@ android:
 before_install:
   - yes | sdkmanager "platforms;android-28"
 
+
+script: ./gradlew :app:build
+
+
 env:
   global:
     - MALLOC_ARENA_MAX=2
@@ -27,8 +31,6 @@ before_script:
   - emulator -avd test -no-audio -no-window &
   - adb wait-for-device
   - adb shell input keyevent 82 &
-
-script: ./gradlew :app:build
 
 deploy:
   provider: releases
