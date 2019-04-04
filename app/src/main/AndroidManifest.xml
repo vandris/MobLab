@@ -10,12 +10,26 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".MainActivity"
-            android:label="@string/app_name"
+            android:name=".ui.main.MainActivity"
+            android:label="Köszönjük, hogy itt vagy"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.info.InfoActivity"
+            android:label="Az általad választott település"
+            android:parentActivityName=".ui.main.MainActivity">
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.modify.ModifyActivity"
+            android:label="Új elem felvétele, szerkesztése"
+            android:parentActivityName=".ui.main.MainActivity">
+            <intent-filter>
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
