@@ -9,13 +9,12 @@ import android.view.View;
 
 import com.example.chairs.R;
 
-public class InfoActivity extends AppCompatActivity{
+public class InfoActivity extends AppCompatActivity implements InfoScreen{
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_info);
-
     }
 
     @Override
