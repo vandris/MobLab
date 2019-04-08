@@ -5,7 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 
 import com.example.chairs.R;
 
-public class ModifyActivity extends AppCompatActivity {
+public class ModifyActivity extends AppCompatActivity implements ModifyScreen{
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,5 +22,15 @@ public class ModifyActivity extends AppCompatActivity {
     @Override
     protected void onStop(){
         super.onStop();
+    }
+
+    @Override
+    public void showCityDatas() {
+
+    }
+
+    @Override
+    public void saveCityDatas() {
+
     }
 }

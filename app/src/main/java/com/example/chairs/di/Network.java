@@ -1,4 +1,10 @@
 package com.example.chairs.di;
 
-public interface Network {
+import java.lang.annotation.Retention;
+
+import static java.lang.annotation.RetentionPolicy.RUNTIME;
+
+//@Qualifier
+@Retention(RUNTIME) // not needed
+public @interface Network {
 }

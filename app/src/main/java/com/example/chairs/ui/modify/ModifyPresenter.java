@@ -1,4 +1,37 @@
 package com.example.chairs.ui.modify;
 
-public class ModifyPresenter {
+import com.example.chairs.ui.Presenter;
+
+public class ModifyPresenter extends Presenter<ModifyScreen> {
+
+    private static ModifyPresenter instance = null;
+
+    private ModifyPresenter() {
+    }
+
+    public static ModifyPresenter getInstance() {
+        if (instance == null) {
+            instance = new ModifyPresenter();
+        }
+        return instance;
+    }
+
+    @Override
+    public void attachScreen(ModifyScreen screen) {
+        super.attachScreen(screen);
+    }
+
+    @Override
+    public void detachScreen() {
+        super.detachScreen();
+    }
+
+    public void showCityDatas(){
+        screen.showCityDatas();
+    }
+
+    public void saveCityDatas(){
+        screen.saveCityDatas();
+    }
+
 }
