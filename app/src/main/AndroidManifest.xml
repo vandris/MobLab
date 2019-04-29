@@ -11,8 +11,7 @@
         android:theme="@style/AppTheme">
         <activity
             android:name=".ui.main.MainActivity"
-            android:label="Köszönjük, hogy itt vagy"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:label="Köszönjük, hogy itt vagy">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
